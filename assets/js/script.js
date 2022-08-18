@@ -1,4 +1,5 @@
 
+
 // moment().format("MMM Do YY");
 //Display date object as title of page
 //Loop append buttons i = 24 times
@@ -10,3 +11,33 @@
 //Else button is green
 
 $("#currentDay").text(moment().format("MMM Do YY"))
+
+//Use moment to put current hour in a variable
+var currentTime = moment().format("HH");
+console.log(currentTime);
+
+
+$(".time-block").determineTimeBlockClass
+// Query all of the elements with the class of timeblock - in query include children in query for comparison
+// For every element in the queried list compare id/dataset to time variable from moment.
+
+
+function determineTimeBlockClass(currentTime, blockTime) {
+    var blockTime = $(textarea).getElementById;
+    console.log(blockTime)
+    if (currentTime < blockTime) return 'future'
+    if (currentTime > blockTime) return 'past'
+    if (currentTime === blockTime) return 'present'
+}
+
+
+
+$(".saveBtn").on("click", function () {
+    console.log($(this))
+    const textInput = $(this).siblings(".col-10").val();
+    console.log(textInput);
+
+})
+
+
+$("p").siblings(".selected").css("background", "yellow");
